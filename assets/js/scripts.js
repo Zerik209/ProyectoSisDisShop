@@ -76,3 +76,12 @@ function mostrar(){
         }
     }
 }
+$(document).ready(function() {
+    $(".fade-in").each(function(index) {
+      $(this).delay(200 * index).queue(function() {
+        $(this).addClass("show");
+        $(this).dequeue();
+      });
+    });
+  });
+  

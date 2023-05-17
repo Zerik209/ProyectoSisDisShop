@@ -48,3 +48,16 @@ right: 20px;
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
 }
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }  
