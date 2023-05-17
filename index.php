@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Eyewear Shoppp</title>
+    <title>Eyewear Shop</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -46,7 +46,7 @@
         </nav>
     </div>
     <!-- Header-->
-    <header class="bg-primary py-5" class="bg-primary py-5 fade-in">
+    <header class="bg-primary py-5 fade-in">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Eyewear Shop</h1>
@@ -54,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section class="py-5" class="py-5 fade-in">
+    <section class="py-5 fade-in">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <?php
