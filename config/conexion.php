@@ -10,7 +10,7 @@ $conexion->real_connect($host, $username, $password, $database, 3306, NULL, MYSQ
 
 // Verificar si hay errores de conexión
 if ($conexion->connect_errno) {
-    die("Error de conexión confirmado: " . $conexion->connect_error);
+    die("Error de conexión confirmado2: " . $conexion->connect_error);
 }
 
 
