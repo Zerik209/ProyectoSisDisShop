@@ -1,4 +1,15 @@
 <?php
-    $con = mysqli_init();
-    mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
-    mysqli_real_connect($conn, "shop.mysql.database.azure.com", "Zerik209", "Basquetball209", "card", 3306, MYSQLI_CLIENT_SSL);
+$servername = "shop.mysql.database.azure.com";
+$username = "Zerik209";
+$password = "Basquetball209";
+$database = "card";
+
+// Crear una conexión mysqli
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Verificar si hay errores de conexión
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+?>
