@@ -1,11 +1,14 @@
 <?php
 $conexion = mysqli_init();
-mysqli_ssl_set($con, NULL, NULL, "{path to CA cert}", NULL, NULL);
-mysqli_real_connect($con, "shop.mysql.database.azure.com", "Zerik209@shop", "Basquetball209", "card", 3306, NULL, MYSQLI_CLIENT_SSL);
+mysqli_ssl_set($conexion, NULL, NULL, "ssl/BaltimoreCyberTrustRoot.crt.pem", NULL, NULL);
 
-// Verificar si hay errores de conexión
+mysqli_real_connect($conexion, "shop.mysql.database.azure.com", "Zerik209", "Basquetball209", "card", 3306, MYSQLI_CLIENT_SSL);
+
 if (mysqli_connect_errno()) {
-    die("Error de conexión6: " . mysqli_connect_error());
+    die("Error de conexión a la base de datos6: " . mysqli_connect_error());
+} else {
+    echo "Conexión exitosa a la base de datos.";
 }
 
 ?>
+
