@@ -1,5 +1,12 @@
 <?php require_once "config/conexion.php";
 require_once "config/config.php";
+// Variable para almacenar la dirección de envío
+$direccion_envio = '';
+
+// Verificar si se ha enviado una dirección de envío
+if (isset($_POST['direccion_envio'])) {
+    $direccion_envio = $_POST['direccion_envio'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,6 +68,20 @@ require_once "config/config.php";
                         </table>
                     </div>
                 </div>
+                <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Dirección de envío:</h4>
+                <form method="POST" action="">
+                    <div class="mb-3">
+                        <label for="direccion_envio" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion_envio" name="direccion_envio" value="<?php echo $direccion_envio; ?>">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar dirección de envío</button>
+                </form>
+            </div>
+        </div>
+    </div>
                 <div class="col-md-5 ms-auto">
                     <h4>Total a Pagar: <span id="total_pagar">0.00</span></h4>
                     <div class="d-grid gap-2">
