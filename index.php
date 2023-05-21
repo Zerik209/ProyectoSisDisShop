@@ -99,6 +99,42 @@
             </div>
         </div>
     </section>
+    <!-- Contact Form -->
+<section class="py-5 fade-in bg-dark">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="text-center text-white mb-4">Formulario de Contacto</h2>
+                <form action="enviar_correo.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label text-white">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label text-white">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="text-center text-white mb-4">Redes Sociales</h2>
+                <p class="text-center text-white">¡Síguenos en nuestras redes sociales para obtener las últimas actualizaciones y ofertas!</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/tiendaeyewear" target="_blank" class="btn btn-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/tiendaeyewear" target="_blank" class="btn btn-primary"><i class="bi bi-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
