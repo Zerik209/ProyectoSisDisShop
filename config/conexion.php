@@ -1,7 +1,7 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $clave = "";
+    $host = "shop.mysql.database.azure.com";
+    $user = "Zerik209";
+    $clave = "Basquetball209";
     $bd = "card";
     $conexion = mysqli_connect($host,$user,$clave,$bd);
     if (mysqli_connect_errno()){
