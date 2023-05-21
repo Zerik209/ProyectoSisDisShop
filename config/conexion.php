@@ -6,12 +6,12 @@ $password = "Basquetball209";
 $database = "card";
 
 $conexion = mysqli_init();
-$conexion->ssl_set(NULL, NULL, NULL, "BaltimoreCyberTrustRoot.crt.pem", NULL);
+$conexion->ssl_set(NULL, NULL, NULL, "ssl/DigiCertGlobalRootCA.crt.pem", NULL);
 $conexion->real_connect($host, $username, $password, $database, $port, NULL, MYSQLI_CLIENT_SSL);
 
 // Verificar si hay errores de conexión
 if ($conexion->connect_errno) {
-    die("Error de conexión confirmado11: " . $conexion->connect_error);
+    die("Error de conexión confirmado12: " . $conexion->connect_error);
 }
 
 $query = mysqli_query($conexion, "SELECT * FROM categorias");
