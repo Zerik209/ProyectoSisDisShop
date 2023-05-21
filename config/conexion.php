@@ -4,16 +4,14 @@ $username = "Zerik209";
 $password = "Basquetball209";
 $database = "card";
 
-$mysqli = mysqli_init();
-$mysqli->ssl_set(
-    NULL, NULL, NULL, "BaltimoreCyberTrustRoot.crt.pem", NULL
-);
-$mysqli->real_connect(
-    $host, $username, $password, $database, 3306, NULL, NULL
-);
+$conexion = mysqli_init();
+$conexion->ssl_set(NULL, NULL, NULL, "BaltimoreCyberTrustRoot.crt.pem", NULL);
+$conexion->real_connect($host, $username, $password, $database, 3306, NULL, MYSQLI_CLIENT_SSL);
 
-if ($mysqli->connect_errno) {
-    die("Error de conexión: " . $mysqli->connect_error);
+// Verificar si hay errores de conexión
+if ($conexion->connect_errno) {
+    die("Error de conexión: " . $conexion->connect_error);
 }
+
 
 ?>
