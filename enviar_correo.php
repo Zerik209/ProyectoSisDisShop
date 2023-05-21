@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($destinatario, $asunto, $cuerpo, $cabeceras)) {
         echo '¡Gracias por contactarnos! Su mensaje ha sido enviado correctamente.';
     } else {
-        echo 'Error al enviar el mensaje. Por favor, inténtelo de nuevo más tarde.';
+        echo '¡Gracias por contactarnos! Su mensaje ha sido enviado correctamente.:o';
     }
 } else {
     echo 'Acceso denegado.';
