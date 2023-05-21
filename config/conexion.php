@@ -1,15 +1,19 @@
 <?php
-$servername = "shop.mysql.database.azure.com";
+$host = "shop.mysql.database.azure.com";
 $username = "Zerik209";
 $password = "Basquetball209";
 $database = "card";
 
-// Crear una conexión mysqli
-$conn = new mysqli($servername, $username, $password, $database);
+$mysqli = mysqli_init();
+$mysqli->ssl_set(
+    NULL, NULL, NULL, "BaltimoreCyberTrustRoot.crt.pem", NULL
+);
+$mysqli->real_connect(
+    $host, $username, $password, $database, 3306, NULL, NULL
+);
 
-// Verificar si hay errores de conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
+if ($mysqli->connect_errno) {
+    die("Error de conexión: " . $mysqli->connect_error);
 }
 
 ?>
