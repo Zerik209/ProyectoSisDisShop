@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Tienda de gafas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,15 +45,15 @@
             </div>
         </nav>
     </div>
-    <!-- Header-->
-    <header class="bg-primary py-5 fade-in">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Eyewear Shop</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Las mejores gafas y lentes del mercado.</p>
-            </div>
+<!-- Header-->
+<header class="header fade-in">
+    <div class="container2 fade-in">
+        <div class="text-center text-black">
+            <h1 class="display-4 fw-bolder header-text">Eyewear Shop</h1>
+            <p class="lead fw-normal text-black mb-0 subtext">Las mejores gafas y lentes del mercado.</p>
         </div>
-    </header>
+    </div>
+</header>
     <section class="py-5 fade-in">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -102,7 +102,7 @@
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Eyewear Shop 2023</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->

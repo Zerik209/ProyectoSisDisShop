@@ -4,7 +4,7 @@ font-weight: bold; /* Fuente en negrita o bold */
 color: #ffffff; /* Color del texto */
 border-radius: 5px; /* Borde del boton */
 letter-spacing: 2px; /* Espacio entre letras */
-background-color: #6fe91e; /* Color de fondo */
+background-color: #007bff; /* Color de fondo */
 padding: 18px 30px; /* Relleno del boton */
 position: fixed;
 bottom: 40px;
@@ -25,6 +25,15 @@ font-size: 14px;
 padding: 12px 20px;
 bottom: 20px;
 right: 20px;
+background-color: #007bff;
+color: white;
+border-radius: 50px;
+padding: 10px 20px;
+text-decoration: none;
+position: fixed;
+bottom: 40px;
+right: 20px;
+z-index: 999;
 }
 }
 /* Estilos personalizados */
@@ -48,16 +57,68 @@ right: 20px;
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
 }
+/* estilos.css */
 .fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 1s ease-in forwards;
-  }
-  
-  @keyframes fadeInAnimation {
-    from {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
       opacity: 0;
-    }
-    to {
+  }
+  to {
       opacity: 1;
-    }
-  }  
+  }
+}
+
+@keyframes highlightAnimation {
+  0% {
+      color: white;
+      text-shadow: none;
+  }
+  50% {
+      color: yellow;
+      text-shadow: 0 0 10px yellow;
+  }
+  100% {
+      color: white;
+      text-shadow: none;
+  }
+}
+
+.header-text {
+  font-size: 8rem;
+  margin-bottom: 20px;
+  animation: highlightAnimation 3s infinite;
+}
+
+
+.subtext {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.header {
+    background: linear-gradient(to bottom, #007bff, #007bff);
+}
+.container2 {
+  background: linear-gradient(to bottom, #007bff, #ffffff);
+}
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #007bff;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 3px 0px 0px rgba(0.1, 1, 1, 0.1)
+}

@@ -32,13 +32,13 @@ require_once "config/config.php";
         </nav>
     </div>
     <!-- Header-->
-    <header class="bg-primary py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Carrito</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Tus Productos Agregados.</p>
-            </div>
+    <header class="header fade-in">
+    <div class="container2 fade-in">
+        <div class="text-center text-black">
+            <h1 class="display-4 fw-bolder header-text">Carrito</h1>
+            <p class="lead fw-normal text-black mb-0 subtext">Tus productos agregados</p>
         </div>
+    </div>
     </header>
     <section class="py-5">
         <div class="container px-4 px-lg-5">
@@ -74,7 +74,7 @@ require_once "config/config.php";
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Eyewear Shop 2023</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
