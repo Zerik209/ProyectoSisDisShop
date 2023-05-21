@@ -11,7 +11,7 @@ $conexion->real_connect($host, $username, $password, $database, $port, NULL, MYS
 
 // Verificar si hay errores de conexión
 if ($conexion->connect_errno) {
-    die("Error de conexión confirmado10: " . $conexion->connect_error);
+    die("Error de conexión confirmado11: " . $conexion->connect_error);
 }
 
 $query = mysqli_query($conexion, "SELECT * FROM categorias");
