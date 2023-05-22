@@ -36,7 +36,7 @@ if (empty($_SESSION['id'])) {
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Tienda <sup>Online</sup></div>
+                <div class="sidebar-brand-text mx-3">Eyewear <sup>Shop</sup></div>
             </a>
 
             <!-- Divider -->
