@@ -73,10 +73,10 @@ if ($conexion->connect_errno) {
 
 ## Créditos💯
 
-Erik Aban
-Marisol Canul
-Daniel Panti
-Eduardo Corea
+- Erik Aban
+- Marisol Canul
+- Daniel Panti
+- Eduardo Corea
 
 ## Licencia🆓
 
