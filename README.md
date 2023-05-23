@@ -70,6 +70,18 @@ if ($conexion->connect_errno) {
 15. DigiCertGlobalRootCA.crt.pem, este es el nombre del archivo del certificado SSL.
 16. Actualiza tu repositorio y listo.
 
+## Capturas📸
+![Texto alternativo de la imagen](capturas/1.jpeg)
+![Texto alternativo de la imagen](capturas/2.jpeg)
+![Texto alternativo de la imagen](capturas/3.jpeg)
+![Texto alternativo de la imagen](capturas/4.jpeg)
+![Texto alternativo de la imagen](capturas/5.jpeg)
+![Texto alternativo de la imagen](capturas/6.jpeg)
+![Texto alternativo de la imagen](capturas/7.jpeg)
+![Texto alternativo de la imagen](capturas/8.jpeg)
+
+
+
 
 ## Créditos💯
 
